@@ -131,6 +131,7 @@ void go_next(sep_list **list_s, line_list **list_l, data_shell *datash)
  */
 int split_commands(data_shell *datash, char *input)
 {
+
 	sep_list *head_s, *list_s;
 	line_list *head_l, *list_l;
 	int loop;
@@ -205,6 +206,7 @@ char **split_line(char *input)
 		}
 		token = _strtok(NULL, TOK_DELIM);
 		tokens[i] = token;
+	}
 
 	return (tokens);
 }
