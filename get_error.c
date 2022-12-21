@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * get_error - calls the error according the builtin, syntax or permission
@@ -30,7 +30,7 @@ int get_error(data_shell *datash, int eval)
 	}
 
 	if (error)
-
+	{
 		write(STDERR_FILENO, error, _strlen(error));
 		free(error);
 	}
